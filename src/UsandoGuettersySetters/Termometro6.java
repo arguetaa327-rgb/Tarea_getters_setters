@@ -1,6 +1,6 @@
 package UsandoGuettersySetters;
 
-public class Termómetro6 {
+public class Termometro6 {
 
 	    private double celsius;
 
