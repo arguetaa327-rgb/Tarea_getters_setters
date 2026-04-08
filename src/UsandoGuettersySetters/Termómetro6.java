@@ -2,9 +2,21 @@ package UsandoGuettersySetters;
 
 public class Termómetro6 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	    private double celsius;
 
+	    public double getCelsius() {
+	        return celsius;
+	    }
+
+	    public void setCelsius(double temperatura) {
+	        if (temperatura >= -273.15) {
+	            this.celsius = temperatura;
+	        } else {
+	            System.out.println("La temperatura no puede ser menor a -273.15.");
+	        }
+	    }
+
+	    public double getFahrenheit() {
+	        return (celsius * 9 / 5) + 32;
+	    }
 	}
-
-}

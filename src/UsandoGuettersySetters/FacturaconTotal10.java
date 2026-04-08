@@ -2,9 +2,60 @@ package UsandoGuettersySetters;
 
 public class FacturaconTotal10 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	    private String codigoFactura;
+	    private String descripcion;
+	    private int cantidad;
+	    private double precioUnitario;
 
+	    public String getCodigoFactura() {
+	        return codigoFactura;
+	    }
+
+	    public void setCodigoFactura(String codigoFactura) {
+	        this.codigoFactura = codigoFactura;
+	    }
+
+	    public String getDescripcion() {
+	        return descripcion;
+	    }
+
+	    public void setDescripcion(String descripcion) {
+	        this.descripcion = descripcion;
+	    }
+
+	    public int getCantidad() {
+	        return cantidad;
+	    }
+
+	    public void setCantidad(int cantidad) {
+	        if (cantidad > 0) {
+	            this.cantidad = cantidad;
+	        } else {
+	            System.out.println("La cantidad debe ser mayor a 0.");
+	        }
+	    }
+
+	    public double getPrecioUnitario() {
+	        return precioUnitario;
+	    }
+
+	    public void setPrecioUnitario(double precioUnitario) {
+	        if (precioUnitario > 0) {
+	            this.precioUnitario = precioUnitario;
+	        } else {
+	            System.out.println("El precio unitario debe ser mayor a 0.");
+	        }
+	    }
+
+	    public double calcularTotal() {
+	        return cantidad * precioUnitario;
+	    }
+
+	    public void mostrarFactura() {
+	        System.out.println("Codigo factura: " + codigoFactura);
+	        System.out.println("Descripcion: " + descripcion);
+	        System.out.println("Cantidad: " + cantidad);
+	        System.out.println("Precio unitario: " + precioUnitario);
+	        System.out.println("Total: " + calcularTotal());
+	    }
 	}
-
-}
