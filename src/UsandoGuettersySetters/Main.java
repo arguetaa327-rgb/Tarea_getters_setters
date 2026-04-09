@@ -6,7 +6,7 @@ public class Main {
 	    public static void main(String[] args) {
 
 	        PersonaEncapsulada1 persona = new PersonaEncapsulada1();
-	        persona.setNombre("Carlin");
+	        persona.setNombre("Alondra");
 	        persona.setEdad(-5);
 	        persona.setGenero("Femenino");
 
@@ -78,9 +78,9 @@ public class Main {
 	        System.out.println(reloj.mostrarHora());
 
 	        ContactoConTeléfono8 contacto = new ContactoConTeléfono8();
-	        contacto.setNombre("Juana");
+	        contacto.setNombre("Maria");
 	        contacto.setTelefono("12345678");
-	        contacto.setEmail("juana@gmail.com");
+	        contacto.setEmail("maria@gmail.com");
 
 	        System.out.println("\nContacto:");
 	        contacto.mostrarContacto();
